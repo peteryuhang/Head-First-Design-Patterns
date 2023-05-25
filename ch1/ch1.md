@@ -1,0 +1,8 @@
+- **Design Principle**
+  - **Identify the aspects of your application that vary and separate them from what stays the same**
+    - Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't
+    - This forms the basis for almost every design pattern
+    - All patterns provide a way to let **some part of a system vary independently of all other parts**
+  - **Program to an interface, not an implementation**
+    - Rely on implementation will make no room for changing becasue we were locked into using that specific implementation
+    - "Program to an interface" really means **"Program to a supertype"**, which means the class declaring them doesn't have to know about the actual object types
