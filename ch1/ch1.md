@@ -6,3 +6,11 @@
   - **Program to an interface, not an implementation**
     - Rely on implementation will make no room for changing becasue we were locked into using that specific implementation
     - "Program to an interface" really means **"Program to a supertype"**, which means the class declaring them doesn't have to know about the actual object types
+  - **Favor composition over inheritance**
+    - Composition represents **HAS-A** relationship, interitance represents **IS-A** relationship
+    - Let you encapsulate a family of algorithms (behaviors) into their own set of classes
+    - Let you **change behavior at runtime** as long as the object you're composing with implements the correct behavior interface
+- **Design Pattern**
+  - **Strategy Pattern**
+    - Defines a family of algorithms, encapsulates each one, and makes them interchangeable
+    - Strategy Pattern lets the algorithm vary independently from clients that use it
