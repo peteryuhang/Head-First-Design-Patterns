@@ -9,3 +9,5 @@ Note of reading book - head first design pattern
 ## [The Observer Pattern](./ch2/ch2.md)
 
 [Weather Station Project](./ch2/WeatherStationProject.java)
+
+[Weather Station Project - Java Built-in Version](./ch2/WeatherStationJavaBuiltInVersion.java)
