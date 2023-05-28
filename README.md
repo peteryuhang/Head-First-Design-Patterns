@@ -7,3 +7,5 @@ Note of reading book - head first design pattern
 [SumUDuckApp](./ch1/SimUDuckApp.java)
 
 ## [The Observer Pattern](./ch2/ch2.md)
+
+[Weather Station Project](./ch2/WeatherStationProject.java)
