@@ -13,3 +13,5 @@ Note of reading book - head first design pattern
 [Weather Station Project - Java Built-in Version](./ch2/WeatherStationJavaBuiltInVersion.java)
 
 ## [The Decorating Pattern](./ch3/ch3.md)
+
+[Starbuzz Coffee](./ch3/StarbuzzCoffee.java)
