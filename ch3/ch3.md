@@ -1,0 +1,6 @@
+- **Design Principle**
+  - **Open-Closed Principle:** Classes should be open for extension, but closed for modification
+    - Applying this principle everywhere is wasteful, unnecessary, and can lead to complex, hard to understand code
+- **The Decorator Pattern**
+  - Attaches additional responsibilities to an object dynamically
+  - Decorators provide a flexible alternative to subclassing for extending functionality
