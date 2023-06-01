@@ -1,7 +1,7 @@
 package ch4;
 
 
-class PizzaStore {
+class PizzaStoreSimpleFactory {
   SimplePizzaFactory factory;
 
   public PizzaStore(SimplePizzaFactory factory) {

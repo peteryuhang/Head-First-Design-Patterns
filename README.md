@@ -20,6 +20,8 @@ Note of reading book - head first design pattern
 
 [Pizza Store - Simple Factory (not a design pattern, just a programming idiom)](./ch4/PizzaStoreSimpleFactory.java)
 
+[Pizza Store Version 1](./ch4/PizzaStoreV1.java)
+
 ## [The Singleton Pattern](./ch5/ch5.md)
 
 ## [The Command Pattern](./ch6/ch6.md)
