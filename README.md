@@ -15,3 +15,25 @@ Note of reading book - head first design pattern
 ## [The Decorating Pattern](./ch3/ch3.md)
 
 [Starbuzz Coffee](./ch3/StarbuzzCoffee.java)
+
+## [The Factory Pattern](./ch4/ch4.md)
+
+## [The Singleton Pattern](./ch5/ch5.md)
+
+## [The Command Pattern](./ch6/ch6.md)
+
+## [The Adapter and Facade Pattern](./ch7/ch7.md)
+
+## [The Template Method Pattern](./ch8/ch8.md)
+
+## [The Iterator and Composite Pattern](./ch9/ch9.md)
+
+## [The State Pattern](./ch10/ch10.md)
+
+## [The Proxy Pattern](./ch11/ch11.md)
+
+## [The Command Pattern](./ch12/ch12.md)
+
+## [Better Living with Patterns](./ch13/ch13.md)
+
+## [Appendix: Leftover Patterns](./ch14/ch14.md)
