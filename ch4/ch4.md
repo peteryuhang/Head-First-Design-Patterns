@@ -1,0 +1,3 @@
+- Factory as a static method
+  - **Advantage**: No need to instantiate an object to make use of the create method
+  - **Disadvantage**: Can't subclass and change the behavior of the create method
