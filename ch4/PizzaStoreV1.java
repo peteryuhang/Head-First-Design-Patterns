@@ -2,10 +2,12 @@ package ch4;
 
 import java.util.*;
 
+// ====================================== creator classes ======================================
 abstract class PizzaStore {
   public Pizza orderPizza(String type) {
     Pizza pizza;
 
+    // Decoupling the implementation of the product from its use
     pizza = createPizza(type);
 
     pizza.prepare();
@@ -67,6 +69,7 @@ class CaliforniaPizzaStore extends PizzaStore {
   }
 }
 
+// ====================================== product classes ======================================
 abstract class Pizza {
   String name;
   String dough;

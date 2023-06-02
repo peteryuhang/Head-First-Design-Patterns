@@ -1,3 +1,7 @@
 - Factory as a static method
   - **Advantage**: No need to instantiate an object to make use of the create method
   - **Disadvantage**: Can't subclass and change the behavior of the create method
+- **Factory Pattern**
+  - All factory patterns encapsulate object creation
+  - **The Factory Method Pattern**
+    - Defines an interface for creating an object, but let subclass to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass
