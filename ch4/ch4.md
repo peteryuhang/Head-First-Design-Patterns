@@ -5,3 +5,11 @@
   - All factory patterns encapsulate object creation
   - **The Factory Method Pattern**
     - Defines an interface for creating an object, but let subclass to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass
+- **Design Principle**
+  - **Dependency Inversion Principle**: Depend upon abstractions. Do not depend upon concrete classes
+    - High-level components should not depend on low-level components; rather, they should **both** depend on abstractions
+    - **Inversion** means the original top-to-bottom dependency chart change to both hight-level and low-level modules depending on the abstraction. We should think in the invert way as normal approach
+    - **Guidelines** can help you avoid OO designs that violate this principle (not rule, just guidelines, if have good reason to break, can go ahead):
+      - No variable should hold a reference to a concrete class
+      - No class should derive from a concrete class
+      - No method should override an implemented method of any of its base classes
