@@ -131,7 +131,7 @@ class CaliforniaStyleCheesePizza extends Pizza {}
 class CaliforniaStyleVeggiePizza extends Pizza {}
 class CaliforniaStylePepperoniPizza extends Pizza {}
 
-public class PizzaStoreV1 {
+public class PizzaStoreFactoryMethod {
   public static void main(String[] args) {
     PizzaStore nyStore = new NYPizzaStore();
     PizzaStore chicagoStore = new ChicagoPizzaStore();
