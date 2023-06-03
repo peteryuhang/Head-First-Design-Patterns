@@ -122,6 +122,9 @@ class ClamPizza extends Pizza {
 
 // ====================================== ingredient classes ======================================
 
+/* 
+ * Provides an abstract interface for creating a family of products
+ */
 interface PizzaIngredientFactory {
   public Dough createDough();
   public Sauce createSauce();
@@ -131,6 +134,10 @@ interface PizzaIngredientFactory {
   public Clams createClam();
 }
 
+/* 
+ * Methods to create products in an Abstract Factory are often implemented
+ * with Factory Method
+ */
 class NYPizzaIngredientFactory implements PizzaIngredientFactory {
   public Dough createDough() {
     return new ThinCrustDough();
@@ -185,6 +192,11 @@ class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
   }
 }
 
+
+/* 
+ * Each ingredient represents a product that is produced by a Factory Method
+ * in the Abstract Factory
+ */
 interface Dough {}
 class ThinCrustDough implements Dough {}
 class ThickCrustDough implements Dough {}
