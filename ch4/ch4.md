@@ -1,6 +1,3 @@
-- Factory as a static method
-  - **Advantage**: No need to instantiate an object to make use of the create method
-  - **Disadvantage**: Can't subclass and change the behavior of the create method
 - **Factory Pattern**
   - All factory patterns encapsulate object creation
   - Encapsulate object creation and lead to more decoupled, flexible designs
@@ -14,6 +11,9 @@
     - Provides an interface for creating families of related or dependent objects without specifying their concrete classes
     - Rely on **object composition**: object creation is implemented in methods exposed in the factory interface
     - The intent is to create families of related objects without having to depend on their concrete classes
+  - Factory method as a static method
+    - **Advantage**: No need to instantiate an object to make use of the create method
+    - **Disadvantage**: Can't subclass and change the behavior of the create method
 - **Design Principle**
   - **Dependency Inversion Principle**: Depend upon abstractions. Do not depend upon concrete classes
     - High-level components should not depend on low-level components; rather, they should **both** depend on abstractions
