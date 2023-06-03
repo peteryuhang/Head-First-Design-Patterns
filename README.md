@@ -22,7 +22,7 @@ Note of reading book - head first design pattern
 
 [Pizza Store - Factory Method](./ch4/PizzaStoreFactoryMethod.java)
 
-[Pizza Store - Abstract Factory Method](./ch4/PizzaStoreAbstractFactory.java)
+[Pizza Store - Abstract Factory](./ch4/PizzaStoreAbstractFactory.java)
 
 ## [The Singleton Pattern](./ch5/ch5.md)
 
