@@ -1,0 +1,3 @@
+- **The Singletom Pattern**
+  - Ensures a class has only one instance, and provides a global point of access to it
+  - We can implement Singleton in a lazy manner do it will be helpful for resource intensive objects

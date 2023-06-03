@@ -26,6 +26,8 @@ Note of reading book - head first design pattern
 
 ## [The Singleton Pattern](./ch5/ch5.md)
 
+[Chocolate Boiler - Normal Version](./ch5/ChocolateBoiler.java)
+
 ## [The Command Pattern](./ch6/ch6.md)
 
 ## [The Adapter and Facade Pattern](./ch7/ch7.md)
