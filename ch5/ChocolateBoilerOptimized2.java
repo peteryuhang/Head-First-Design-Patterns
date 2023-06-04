@@ -13,7 +13,7 @@ public class ChocolateBoilerOptimized2 {
     boiled = false;
   }
 
-  public static synchronized ChocolateBoilerOptimized2 getInstance() {
+  public static ChocolateBoilerOptimized2 getInstance() {
     return instance;
   }
 
