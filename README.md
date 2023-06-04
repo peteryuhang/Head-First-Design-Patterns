@@ -28,6 +28,8 @@ Note of reading book - head first design pattern
 
 [Chocolate Boiler - Normal Version](./ch5/ChocolateBoiler.java)
 
+[Chocolate Boiler - Multithread Safed Version 1](./ch5/ChocolateBoilerOptimized1.java)
+
 ## [The Command Pattern](./ch6/ch6.md)
 
 ## [The Adapter and Facade Pattern](./ch7/ch7.md)
