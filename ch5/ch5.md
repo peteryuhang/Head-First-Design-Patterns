@@ -1,3 +1,8 @@
 - **The Singletom Pattern**
   - Ensures a class has only one instance, and provides a global point of access to it
   - We can implement Singleton in a lazy manner do it will be helpful for resource intensive objects
+- It is very difficult to subclass the singleton code. Before implementing such a scheme, you should ask yourself what you are really gaining from subclassing a Singleton
+- The advantage of Singleton over **global variables**:
+  - Singleton can do lazy instantiation, just do the initialization when it is really need, in some application, this can be really helpful
+  - Singleton ensures only one instance of a class exists but global variables can't
+- If you are using a JVM earlier than **1.2**, you'll need to create a registry of Singleton to defeat the garbage collector

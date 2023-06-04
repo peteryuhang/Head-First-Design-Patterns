@@ -28,7 +28,11 @@ Note of reading book - head first design pattern
 
 [Chocolate Boiler - Normal Version](./ch5/ChocolateBoiler.java)
 
-[Chocolate Boiler - Multithread Safed Version 1](./ch5/ChocolateBoilerOptimized1.java)
+[Chocolate Boiler - Multithread Safed Version 1 (Synchronize the getInstance method)](./ch5/ChocolateBoilerOptimized1.java)
+
+[Chocolate Boiler - Multithread Safed Version 2 (Eager instantiation)](./ch5/ChocolateBoilerOptimized2.java)
+
+[Chocolate Boiler - Multithread Safed Version 3 (Double-checked locking)](./ch5/ChocolateBoilerOptimized3.java)
 
 ## [The Command Pattern](./ch6/ch6.md)
 
