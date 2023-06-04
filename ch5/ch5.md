@@ -5,4 +5,5 @@
 - The advantage of Singleton over **global variables**:
   - Singleton can do lazy instantiation, just do the initialization when it is really need, in some application, this can be really helpful
   - Singleton ensures only one instance of a class exists but global variables can't
+- Be careful if you are using multiple class loaders; this could defeat the Singleton implementation and result in multiple instances
 - If you are using a JVM earlier than **1.2**, you'll need to create a registry of Singleton to defeat the garbage collector
