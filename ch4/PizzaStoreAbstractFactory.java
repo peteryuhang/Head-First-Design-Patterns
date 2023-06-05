@@ -106,7 +106,7 @@ class CheesePizza extends Pizza {
 class ClamPizza extends Pizza {
   PizzaIngredientFactory ingredientFactory;
 
-  public ChicagoStyleCheesePizza(PizzaIngredientFactory ingredientFactory) {
+  public ClamPizza(PizzaIngredientFactory ingredientFactory) {
     this.ingredientFactory = ingredientFactory;
   }
 
