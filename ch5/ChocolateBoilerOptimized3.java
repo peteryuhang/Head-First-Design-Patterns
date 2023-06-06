@@ -8,6 +8,8 @@ public class ChocolateBoilerOptimized3 {
   /* 
    * The volatile keyword ensures that multiple threads handle the uniqueinstance
    * variable correctly when it is being initialized to the singleton instance
+   * 
+   * volatile only available JDK 1.5 or after
    */
   private volatile static ChocolateBoilerOptimized3 instance;
 
