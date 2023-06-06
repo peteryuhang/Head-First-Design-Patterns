@@ -36,6 +36,8 @@ Note of reading book - head first design pattern
 
 ## [The Command Pattern](./ch6/ch6.md)
 
+[Remote Controller](./ch6/RemoteController.java)
+
 ## [The Adapter and Facade Pattern](./ch7/ch7.md)
 
 ## [The Template Method Pattern](./ch8/ch8.md)
