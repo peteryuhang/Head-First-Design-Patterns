@@ -6,11 +6,11 @@
   - **The Factory Method Pattern**
     - Defines an interface for creating an object, but let subclass to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass
     - Rely on **inheritance**: object creation is delegated to subclasses which implement the factory method to create objects
-    - The intent is to allow a class to defer instantiation to its subclasses
+    - **The intent is to allow a class to defer instantiation to its subclasses**
   - **The Abstract Factory Pattern**
     - Provides an interface for creating families of related or dependent objects without specifying their concrete classes
     - Rely on **object composition**: object creation is implemented in methods exposed in the factory interface
-    - The intent is to create families of related objects without having to depend on their concrete classes
+    - **The intent is to create families of related objects without having to depend on their concrete classes**
   - Factory method as a static method
     - **Advantage**: No need to instantiate an object to make use of the create method
     - **Disadvantage**: Can't subclass and change the behavior of the create method
