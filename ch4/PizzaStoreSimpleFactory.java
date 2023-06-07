@@ -4,7 +4,7 @@ package ch4;
 class PizzaStoreSimpleFactory {
   SimplePizzaFactory factory;
 
-  public PizzaStore(SimplePizzaFactory factory) {
+  public PizzaStoreSimpleFactory(SimplePizzaFactory factory) {
     this.factory = factory;
   }
 
