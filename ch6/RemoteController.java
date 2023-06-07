@@ -4,6 +4,7 @@ package ch6;
 class RemoteControl {
   Command[] onCommands;
   Command[] offCommands;
+  Command undoCommand;
 
   public RemoteControl() {
     onCommands = new Command[7];
@@ -14,6 +15,7 @@ class RemoteControl {
       onCommands[i] = noCommand;
       offCommands[i] = noCommand;
     }
+    undoCommand = noCommand;
   }
 
   public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -23,10 +25,16 @@ class RemoteControl {
 
   public void onButtonWasPushed(int slot) {
     onCommands[slot].execute();
+    undoCommand = onCommands[slot];
   }
 
   public void offButtonWasPushed(int slot) {
     offCommands[slot].execute();
+    undoCommand = offCommands[slot];
+  }
+
+  public void undoButtonWasPushed() {
+    undoCommand.undo();
   }
 
   public String toString() {
@@ -35,6 +43,7 @@ class RemoteControl {
     for (int i = 0; i < onCommands.length; i++) {
       sb.append("[slot " + i + "] " + onCommands[i].getClass().getName() + "  " + offCommands[i].getClass().getName() + "\n");
     }
+    sb.append("[undo] " + undoCommand.getClass().getName() + "\n");
 
     return sb.toString();
   }
@@ -44,6 +53,7 @@ class RemoteControl {
 // ========================================= Command =========================================
 interface Command {
   public void execute();
+  public void undo();
 }
 
 class LightOffCommand implements Command {
@@ -55,6 +65,10 @@ class LightOffCommand implements Command {
 
   public void execute() {
     light.off();
+  }
+
+  public void undo() {
+    light.on();
   }
 }
 
@@ -68,6 +82,10 @@ class LightOnCommand implements Command {
   public void execute() {
     light.on();
   }
+
+  public void undo() {
+    light.off();
+  }
 }
 
 class CeilingFanOffCommand implements Command {
@@ -79,6 +97,10 @@ class CeilingFanOffCommand implements Command {
 
   public void execute() {
     ceilingFan.off();
+  }
+
+  public void undo() {
+    ceilingFan.on();
   }
 }
 
@@ -92,6 +114,10 @@ class CeilingFanOnCommand implements Command {
   public void execute() {
     ceilingFan.on();
   }
+
+  public void undo() {
+    ceilingFan.off();
+  }
 }
 
 class GarageDoorUpCommand implements Command {
@@ -104,6 +130,10 @@ class GarageDoorUpCommand implements Command {
   public void execute() {
     garageDoor.up();
   }
+
+  public void undo() {
+    garageDoor.down();
+  }
 }
 
 class GarageDoorDownCommand implements Command {
@@ -115,6 +145,10 @@ class GarageDoorDownCommand implements Command {
 
   public void execute() {
     garageDoor.down();
+  }
+
+  public void undo() {
+    garageDoor.up();
   }
 }
 
@@ -130,6 +164,10 @@ class StereoOnWithCDCommand implements Command {
     stereo.setCd();
     stereo.setVolume(11);
   }
+
+  public void undo() {
+    stereo.off();
+  }
 }
 
 class StereoOffCommand implements Command {
@@ -142,6 +180,12 @@ class StereoOffCommand implements Command {
   public void execute() {
     stereo.off();
   }
+
+  public void undo() {
+    stereo.on();
+    stereo.setCd();
+    stereo.setVolume(11);
+  }
 }
 
 /* 
@@ -152,6 +196,10 @@ class StereoOffCommand implements Command {
 class NoCommand implements Command {
   public void execute() {
     System.out.println("There is no command need to be executed...");
+  }
+
+  public void undo() {
+    System.out.println("There is no command need to be undo...");
   }
 }
 
@@ -265,6 +313,8 @@ public class RemoteController {
 
     remoteControl.onButtonWasPushed(0);
     remoteControl.offButtonWasPushed(0);
+    System.out.println(remoteControl);
+    remoteControl.undoButtonWasPushed();;
     remoteControl.onButtonWasPushed(1);
     remoteControl.offButtonWasPushed(1);
     remoteControl.onButtonWasPushed(2);
