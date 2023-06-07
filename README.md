@@ -42,6 +42,10 @@ Note of reading book - head first design pattern
 
 [Turkey Adapter](./ch7/TurkeyAdapter.java)
 
+[Enumeration Adapter](./ch7/EnumerationIterator.java)
+
+[Iterator Adapter](./ch7/IteratorEnumeration.java)
+
 ## [The Template Method Pattern](./ch8/ch8.md)
 
 ## [The Iterator and Composite Pattern](./ch9/ch9.md)
