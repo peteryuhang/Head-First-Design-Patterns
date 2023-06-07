@@ -1,3 +1,3 @@
 - **The Command Pattern**
   - Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations
-  
+- A **null object** is useful when you don't have a meaningful object to return, and yet you want to remove the responsibility for handling **null** from the client

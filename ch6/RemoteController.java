@@ -144,6 +144,11 @@ class StereoOffCommand implements Command {
   }
 }
 
+/* 
+ * Implement a command that does nothing, which is called null object
+ * 
+ * So we no need to check the command existance everytime before we execute any action
+ */
 class NoCommand implements Command {
   public void execute() {
     System.out.println("There is no command need to be executed...");
