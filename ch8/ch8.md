@@ -1,0 +1,3 @@
+- **The Template Method Pattern**
+  - Defines the skeleton of an alogrithm in a method, deferring some steps to subclasses
+  - Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure

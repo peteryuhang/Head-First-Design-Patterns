@@ -48,6 +48,8 @@ Note of reading book - head first design pattern
 
 ## [The Template Method Pattern](./ch8/ch8.md)
 
+[Caffeine Beverage](./ch8/CaffeineBeverage.java)
+
 ## [The Iterator and Composite Pattern](./ch9/ch9.md)
 
 ## [The State Pattern](./ch10/ch10.md)
