@@ -1,3 +1,11 @@
 - **The Command Pattern**
   - Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations
+  - A Command object is at the center of this decoupling and encapsulates a receiver with an action (or set of actions)
+  - Invokers can be parameterized with Commands, even daynamically at runtime
 - A **null object** is useful when you don't have a meaningful object to return, and yet you want to remove the responsibility for handling **null** from the client
+- The way to implement a **history of undo operations**?
+  - Instead of keeping just a reference to the last Command executed, can keep a stack of previous commands
+- Other usage of Command Pattern:
+  - queuing requests
+  - logging requests
+  - transactional systems
