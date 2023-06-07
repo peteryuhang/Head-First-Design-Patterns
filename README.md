@@ -40,6 +40,8 @@ Note of reading book - head first design pattern
 
 ## [The Adapter and Facade Pattern](./ch7/ch7.md)
 
+[Turkey Adapter](./ch7/TurkeyAdapter.java)
+
 ## [The Template Method Pattern](./ch8/ch8.md)
 
 ## [The Iterator and Composite Pattern](./ch9/ch9.md)
