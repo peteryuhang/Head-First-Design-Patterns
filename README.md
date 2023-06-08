@@ -50,6 +50,10 @@ Note of reading book - head first design pattern
 
 [Caffeine Beverage](./ch8/CaffeineBeverage.java)
 
+[Caffeine Beverage with Hook](./ch8/CaffeineBeverageWithHook.java)
+
+[Sort Duck](./ch8/SortDuck.java)
+
 ## [The Iterator and Composite Pattern](./ch9/ch9.md)
 
 ## [The State Pattern](./ch10/ch10.md)
