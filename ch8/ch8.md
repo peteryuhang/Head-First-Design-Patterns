@@ -1,3 +1,10 @@
 - **The Template Method Pattern**
   - Defines the skeleton of an alogrithm in a method, deferring some steps to subclasses
   - Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure
+- **Usage of hook method**
+  - Provide a way for subclass to implement an optional part of an algorithm, it can be skipped if not necessary
+  - Give the subclass a chance to react to some step in the template method that is about to happen or just happened
+- **Design Principle**
+  - **The Hollywood Principle**: Don't call us, we'll call you
+    - We allow low-level components to hook themselves into a system, but the high-level components determine when they are needed, and how
+    - It allow low-level structures to interoperate while preventing other classes from becoming too dependent on them

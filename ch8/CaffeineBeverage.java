@@ -1,7 +1,7 @@
 package ch8;
 
 abstract class CaffeineBeverage {
-  public void prepareRecipe() {
+  final public void prepareRecipe() {
     boilWater();
     brew();
     pourInCup();
