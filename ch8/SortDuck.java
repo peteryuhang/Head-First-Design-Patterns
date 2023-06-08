@@ -2,6 +2,7 @@ package ch8;
 
 import java.util.Arrays;
 
+
 class Duck implements Comparable {
   String name;
   int weight;
@@ -36,6 +37,11 @@ class SortDuck {
     System.out.println("Before sorting:");
     display(ducks);
 
+    /*
+     * Arrays.sort will call the compareTo when doing sorting
+     *
+     * There is no inheritance, but it is template method design pattern
+     */
     Arrays.sort(ducks);
 
     System.out.println("\nAfter sorting:");
