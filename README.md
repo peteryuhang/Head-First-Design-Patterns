@@ -56,6 +56,8 @@ Note of reading book - head first design pattern
 
 ## [The Iterator and Composite Pattern](./ch9/ch9.md)
 
+[Restaurant Merge](./ch9/RestaurantMerge.java)
+
 ## [The State Pattern](./ch10/ch10.md)
 
 ## [The Proxy Pattern](./ch11/ch11.md)
