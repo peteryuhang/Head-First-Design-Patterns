@@ -58,6 +58,8 @@ Note of reading book - head first design pattern
 
 [Restaurant Merge](./ch9/RestaurantMerge.java)
 
+[Restaurant Merge Improved Version](./ch9/RestaurantMergeImprovedVersion.java)
+
 ## [The State Pattern](./ch10/ch10.md)
 
 ## [The Proxy Pattern](./ch11/ch11.md)

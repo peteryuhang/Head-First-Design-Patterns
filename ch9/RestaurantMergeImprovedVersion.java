@@ -2,13 +2,8 @@ package ch9;
 
 import java.util.*;
 
-
-interface Iterator {
-  public boolean hasNext();
-  public Object next();
-}
-
-class DinerMenuIterator implements Iterator {
+// ================================ Iterator ================================
+class DinerMenuIterator implements java.util.Iterator {
   MenuItem[] items;
   int position = 0;
 
@@ -29,32 +24,30 @@ class DinerMenuIterator implements Iterator {
       return true;
     }
   }
-}
 
-class PancakeHouseMenuIterator implements Iterator {
-  ArrayList items;
-  int position = 0;
+  public void remove() {
+    if (position <= 0) {
+      throw new IllegalStateException(
+        "You can't remove an item until you've done at least one next()"
+      );
+    }
 
-  public PancakeHouseMenuIterator(ArrayList items) {
-    this.items = items;
-  }
-
-  public Object next() {
-    MenuItem menuItem = (MenuItem)items.get(position);
-    position = position + 1;
-    return menuItem;
-  }
-
-  public boolean hasNext() {
-    if (position >= items.size()) {
-      return false;
-    } else {
-      return true;
+    if (items[position-1] != null) {
+      for (int i = position-1; i < (items.length-1); i++) {
+        items[i] = items[i+1];
+      }
+      items[items.length-1] = null;
     }
   }
 }
 
-class PancakeHouseMenu {
+
+// ================================ Menu ================================
+interface Menu {
+  public java.util.Iterator createIterator();
+}
+
+class PancakeHouseMenu implements Menu {
   ArrayList menuItems;
 
   public PancakeHouseMenu() {
@@ -94,18 +87,14 @@ class PancakeHouseMenu {
     menuItems.add(menuItem);
   }
 
-  // public ArrayList getMenuItems() {
-  //   return menuItems;
-  // }
-
-  public Iterator createIterator() {
-    return new PancakeHouseMenuIterator(menuItems);
+  public java.util.Iterator createIterator() {
+    return menuItems.iterator();
   }
 
   // other menu methods here
 }
 
-class DinerMenu {
+class DinerMenu implements Menu {
   static final int MAX_ITEMS = 6;
   int numberOfItems = 0;
   MenuItem[] menuItems;
@@ -156,7 +145,7 @@ class DinerMenu {
   //   return menuItems;
   // }
 
-  public Iterator createIterator() {
+  public java.util.Iterator createIterator() {
     return new DinerMenuIterator(menuItems);
   }
 
@@ -197,18 +186,17 @@ class MenuItem {
 }
 
 class Waitress {
-  PancakeHouseMenu pancakeHouseMenu;
-  DinerMenu dinerMenu;
+  Menu pancakeHouseMenu;
+  Menu dinerMenu;
 
-  // Waitress still bound to two concrete Menu classes, need to be fixed
-  public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+  public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
     this.pancakeHouseMenu = pancakeHouseMenu;
     this.dinerMenu = dinerMenu;
   }
 
   public void printMenu() {
-    Iterator pancakeIterator = pancakeHouseMenu.createIterator();
-    Iterator dinerIterator = dinerMenu.createIterator();
+    java.util.Iterator pancakeIterator = pancakeHouseMenu.createIterator();
+    java.util.Iterator dinerIterator = dinerMenu.createIterator();
 
     System.out.println("MENU\n---\nBREAKFAST");
     printMenu(pancakeIterator);
@@ -216,7 +204,7 @@ class Waitress {
     printMenu(dinerIterator);
   }
 
-  public void printMenu(Iterator iter) {
+  public void printMenu(java.util.Iterator iter) {
     while (iter.hasNext()) {
       MenuItem menuItem = (MenuItem) iter.next();
       System.out.print(menuItem.getName() + ", ");
@@ -228,15 +216,13 @@ class Waitress {
   // other methods here
 }
 
-class RestaurantMerge {
+public class RestaurantMergeImprovedVersion {
   public static void main(String[] args) {
-    PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-    DinerMenu dinerMenu = new DinerMenu();
+    Menu pancakeHouseMenu = new PancakeHouseMenu();
+    Menu dinerMenu = new DinerMenu();
 
     Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
 
     waitress.printMenu();
   }
 }
-
-
