@@ -1,0 +1,13 @@
+- **The Iterator Pattern**
+  - Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+  - Once you have a uniform way of accessing the elements of all your aggregate objects, you can write polymorphic code that works with **any** of these aggregates
+  - It removes the **responsibility** for iteration from the aggregate and keeps the aggregate focused on the things it should be focused on (manageing a collection of object), not on iteration
+- **The Composite Pattern**
+  - Allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly
+  - Using a composite structure, we can apply the same operations over both composites and individual objects. In other words, in most cases we can ignore the differences between compositions of objects and individual objects
+  - In the example: Non-leaf node represent Menu, lead node represent item
+- Iterators imply **no ordering**
+- **Design Principle**
+  - **Single Responsibility**: A class should have only one reason to change
+    - Having two ways to change increases the probability the class will change in the future, and when it does, it's going to affect two aspects of your design
+    - **Cohesion**: Cohesion is a more general concept than the Single Responsibility Principle. High cohesion means a module is designed around a set of related functions. Low cohesion means module is designed around a set of unrelated functions. Classes that adhere to the principle tend to have high cohesion
