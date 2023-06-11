@@ -5,8 +5,10 @@
 - **The Composite Pattern**
   - Allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly
   - Using a composite structure, we can apply the same operations over both composites and individual objects. In other words, in most cases we can ignore the differences between compositions of objects and individual objects
+  - Takes the Single Responsibility design principle and trades it for **transparency**
   - In the example: Non-leaf node represent Menu, lead node represent item
 - Iterators imply **no ordering**
+- **Null Iterator**: Iterator that always returns false when hasNext() is called. The client can treat null iterator as normal iterator, no more additional condition needed
 - **Design Principle**
   - **Single Responsibility**: A class should have only one reason to change
     - Having two ways to change increases the probability the class will change in the future, and when it does, it's going to affect two aspects of your design
