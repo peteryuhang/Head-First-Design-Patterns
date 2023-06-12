@@ -7,6 +7,7 @@
   - Using a composite structure, we can apply the same operations over both composites and individual objects. In other words, in most cases we can ignore the differences between compositions of objects and individual objects
   - Takes the Single Responsibility design principle and trades it for **transparency**
   - In the example: Non-leaf node represent Menu, lead node represent item
+  - There are many design tradeoffs in implementing Composite. You need to balance transparency and safety with your needs
 - Iterators imply **no ordering**
 - **Null Iterator**: Iterator that always returns false when hasNext() is called. The client can treat null iterator as normal iterator, no more additional condition needed
 - **Design Principle**
