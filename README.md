@@ -74,6 +74,8 @@ Note of reading book - head first design pattern
 
 [Remote Service Sample](./ch11/rmiservice/MyServiceClient.java)
 
+[Gumball Remote Monitor](./ch11/GumballMonitor.java)
+
 ## [The Command Pattern](./ch12/ch12.md)
 
 ## [Better Living with Patterns](./ch13/ch13.md)
