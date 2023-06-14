@@ -68,6 +68,8 @@ Note of reading book - head first design pattern
 
 [Gumball Machine](./ch10/GumballMachine.java)
 
+[Gumball Machine One In Ten](./ch10/GumballMachineOneInTen.java)
+
 ## [The Proxy Pattern](./ch11/ch11.md)
 
 ## [The Command Pattern](./ch12/ch12.md)

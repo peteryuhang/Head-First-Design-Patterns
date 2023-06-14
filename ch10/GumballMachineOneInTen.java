@@ -1,10 +1,13 @@
 package ch10;
 
+import java.util.Random;
+
 class GumballMachine {
   private State noQuarterState;
   private State hasQuarterState;
   private State soldOutState;
   private State soldState;
+  private State winnerState;
   private State state = soldOutState;
   private int numberOfBall = 0;
 
@@ -13,6 +16,7 @@ class GumballMachine {
     hasQuarterState = new HasQuarterState(this);
     soldOutState = new SoldOutState(this);
     soldState = new SoldState(this);
+    winnerState = new WinnerState(this);
     this.numberOfBall = numberOfBall;
     if (numberOfBall > 0) {
       state = noQuarterState;
@@ -63,6 +67,10 @@ class GumballMachine {
     return soldState;
   }
 
+  public State getWinnerState() {
+    return winnerState;
+  }
+
   public State getCurrentState() {
     return state;
   }
@@ -101,6 +109,7 @@ class NoQuarterState implements State {
 }
 
 class HasQuarterState implements State {
+  Random randomWinner = new Random(System.currentTimeMillis());
   GumballMachine gumballMachine;
 
   public HasQuarterState(GumballMachine gumballMachine) {
@@ -118,7 +127,12 @@ class HasQuarterState implements State {
 
   public void turnCrank() {
     System.out.println("You turned...");
-    gumballMachine.setState(gumballMachine.getSoldState());
+    int winner = randomWinner.nextInt(10);
+    if ((winner == 0) && (gumballMachine.getGumballCount() > 1)) {
+      gumballMachine.setState(gumballMachine.getWinnerState());
+    } else {
+      gumballMachine.setState(gumballMachine.getSoldState());
+    }
   }
 
   public void dispense() {
@@ -177,5 +191,61 @@ class SoldState implements State {
       System.out.println("Oops, out of gumballs!");
       gumballMachine.setState(gumballMachine.getSoldOutState());
     }
+  }
+}
+
+class WinnerState implements State {
+  GumballMachine gumballMachine;
+
+  public WinnerState(GumballMachine gumballMachine) {
+    this.gumballMachine = gumballMachine;
+  }
+
+  public void insertQuarter() {
+    System.out.println("Please wait, we're already giving you a gumball");
+  }
+
+  public void ejectQuarter() {
+    System.out.println("Sorry, you already turned the crank");
+  }
+
+  public void turnCrank() {
+    System.out.println("Turning twice doesn't give you another gumball!");
+  }
+
+  public void dispense() {
+    System.out.println("YOU'RE A WINNER! You get two gumballs for your quarter");
+    gumballMachine.releaseBall();
+    if (gumballMachine.getGumballCount() == 0) {
+      gumballMachine.setState(gumballMachine.getSoldOutState());
+    } else {
+      gumballMachine.releaseBall();
+      if (gumballMachine.getGumballCount() > 0) {
+        gumballMachine.setState(gumballMachine.getNoQuarterState());
+      } else {
+        System.out.println("Oops, out of gumballs!");
+        gumballMachine.setState(gumballMachine.getSoldOutState());
+      }
+    }
+  }
+}
+
+class GumballMachineTestDrive {
+  public static void main(String[] args) {
+    GumballMachine gumballMachine = new GumballMachine(5);
+
+    System.out.println(gumballMachine);
+
+    gumballMachine.insertQuarter();
+    gumballMachine.turnCrank();
+
+    System.out.println(gumballMachine);
+
+    gumballMachine.insertQuarter();
+    gumballMachine.turnCrank();
+    gumballMachine.insertQuarter();
+    gumballMachine.turnCrank();
+
+    System.out.println(gumballMachine);
   }
 }
