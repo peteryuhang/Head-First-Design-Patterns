@@ -66,6 +66,8 @@ Note of reading book - head first design pattern
 
 ## [The State Pattern](./ch10/ch10.md)
 
+[Gumball Machine](./ch10/GumballMachine.java)
+
 ## [The Proxy Pattern](./ch11/ch11.md)
 
 ## [The Command Pattern](./ch12/ch12.md)
