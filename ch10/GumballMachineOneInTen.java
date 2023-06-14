@@ -47,6 +47,16 @@ class GumballMachine {
     }
   }
 
+  public void refill(int balls) {
+    numberOfBall += balls;
+
+    System.out.println("Gumball machine has been refilled with " + balls + " gumballs!");
+
+    if (numberOfBall > 0 && state == soldOutState) {
+      state = noQuarterState;
+    }
+  }
+
   public int getGumballCount() {
     return numberOfBall;
   }
