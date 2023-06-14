@@ -72,6 +72,8 @@ Note of reading book - head first design pattern
 
 ## [The Proxy Pattern](./ch11/ch11.md)
 
+[Remote Service Sample](./ch11/rmiservice/MyServiceClient.java)
+
 ## [The Command Pattern](./ch12/ch12.md)
 
 ## [Better Living with Patterns](./ch13/ch13.md)
