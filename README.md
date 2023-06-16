@@ -76,7 +76,7 @@ Note of reading book - head first design pattern
 
 [Gumball Remote Monitor](./ch11/GumballMonitor.java)
 
-[Match Making - Protection Proxy Based on Java reflect package](./ch11/MatchMakingService.java)
+[Match Making - Dynamic Protection Proxy Based on Java reflect package](./ch11/MatchMakingService.java)
 
 ## [The Compound Pattern](./ch12/ch12.md)
 
