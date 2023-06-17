@@ -56,7 +56,7 @@ class CurrentConditionDisplay implements Observer, DisplayElement {
   private float humidity;
   private float pressure;
 
-  CurrentConditionObserver(Observable observable) {
+  CurrentConditionDisplay(Observable observable) {
     observable.addObserver(this);
   }
 
