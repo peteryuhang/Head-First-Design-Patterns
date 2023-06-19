@@ -80,6 +80,8 @@ Note of reading book - head first design pattern
 
 ## [The Compound Pattern](./ch12/ch12.md)
 
+[DJ View](./ch12/DJView.java)
+
 ## [Better Living with Patterns](./ch13/ch13.md)
 
 ## [Appendix: Leftover Patterns](./ch14/ch14.md)
