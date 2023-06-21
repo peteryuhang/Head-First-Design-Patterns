@@ -84,4 +84,7 @@ Note of reading book - head first design pattern
 
 ## [Better Living with Patterns](./ch13/ch13.md)
 
+<br>
+<br>
+
 ## [Appendix: Leftover Patterns](./ch14/ch14.md)
