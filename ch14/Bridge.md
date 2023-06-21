@@ -1,0 +1,9 @@
+- **The Bridge Pattern**
+  - Use the bridge pattern to vary not only your implementations, but also your abstractions
+- **Benefits**
+  - Decouples an implementation so that it is not bound permanently to an interface
+  - Abstraction and implementation can be extended independently
+  - Changes to the concrete abstraction classes don't affect the client
+- **Usage**
+  - Useful in graphic and windowing systems that need to run over multiple platforms
+  - Useful anytime you need to vary an interface and an implementation in different way

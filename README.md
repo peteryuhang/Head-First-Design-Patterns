@@ -88,3 +88,5 @@ Note of reading book - head first design pattern
 <br>
 
 ## [Appendix: Leftover Patterns](./ch14/ch14.md)
+
+[The Bridge Pattern](./ch14/Bridge.md)
