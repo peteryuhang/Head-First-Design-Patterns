@@ -1,0 +1,11 @@
+- **Chain of Responsibility Pattern**
+  - Give more than one object a chance to handle a request
+  - Each object in the chain acts as a handler and has a successor object. If it can handle the request, it does; otherwise, it forwards the request to its successor
+- **Benefits**
+  - Decouples the sender of the request and its receivers
+  - Simplifies your object because it doesn't have to know the chain's structure and keep direct references to its members
+  - Allows you to add or remove responsibilies dynamically by changing the members or order of the chain
+- **Usage and Drawbacks**
+  - Commonly used in windows systems to handle events like mouse clicks and keyboard events
+  - Execution of the request isn't guaranteed; it may fall off the end of the chain if no object handles (this can be advantage or disadvantage)
+  - Can be hard to observe the runtime characteristics and debug

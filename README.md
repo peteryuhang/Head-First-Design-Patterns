@@ -92,3 +92,5 @@ Note of reading book - head first design pattern
 [The Bridge Pattern](./ch14/Bridge.md)
 
 [The Builder Pattern](./ch14/Builder.md)
+
+[Chain of Responsibility](./ch14/ChainOfResponsibility.md)
