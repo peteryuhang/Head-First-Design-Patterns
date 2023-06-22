@@ -1,0 +1,8 @@
+- **The Flyweight Pattern**
+  - Use the Flyweight Pattern when one instance of a class can be used to provide many "virtual instances"
+- **Benefits**
+  - Reduces the number of object instances at runtime, saving memory
+  - Centralizes state for many "virtual" objects into a single location
+- **Usage & Drawbacks**
+  - The Flyweight is used when a class has many instance, and they can all be controlled identically
+  - One you have implemented it, single, logical instances of the class will not be able to behave independently from the other instances
