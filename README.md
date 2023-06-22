@@ -1,7 +1,7 @@
 # Head-First-Design-Patterns
 Note of reading book - head first design pattern
 
-![](Screen%20Shot%202023-06-22%20at%2011.11.58%20AM.png)
+![](Screen%20Shot%202023-06-22%20at%2011.14.48%20AM.png)
 
 ## [Intro to Design Pattern](./ch1/ch1.md)
 
