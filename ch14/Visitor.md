@@ -1,0 +1,9 @@
+- **Visitor Pattern**
+  - Use the Visitor Pattern when you want to add capabilities to a composite of objects and encapsulation is not important
+- **Benefits**
+  - Allows you to add operations to a Composite structure without changing the structure itself
+  - Adding new operations is relatively easy
+  - The code for operations performed by the Vistor is centralized
+- **Drawbacks**
+  - The Composite classes' encapsulation broken when the Visitor is used
+  - Because the traversal function is involved, changes to the Composite structure are more difficult

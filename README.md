@@ -104,3 +104,5 @@ Note of reading book - head first design pattern
 [The Memento Pattern](./ch14/Memento.md)
 
 [The Prototype Pattern](./ch14/Prototype.md)
+
+[The Visitor Pattern](./ch14/Visitor.md)
