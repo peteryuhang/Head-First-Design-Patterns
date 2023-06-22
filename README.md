@@ -87,6 +87,8 @@ Note of reading book - head first design pattern
 <br>
 <br>
 
-## [Appendix: Leftover Patterns](./ch14/ch14.md)
+## Appendix: Leftover Patterns
 
 [The Bridge Pattern](./ch14/Bridge.md)
+
+[The Builder Pattern](./ch14/Builder.md)
