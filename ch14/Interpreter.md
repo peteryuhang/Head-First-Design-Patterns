@@ -1,0 +1,11 @@
+- **The Interpreter Pattern**
+  - Build an interpreter for a language
+- **Benefits**
+  - Representing each grammar rule in a class makes the language easy to implement
+  - Because the grammar is represented by classes, you can easily change or extend the language
+  - By adding new additional methods to the class structure, you can add new behaviors beyond interpretation, like pretty printing and more sophisticated program validation
+- **Usage & Limitation**
+  - Use interpreter when you need to implement a simple language
+  - Appropriate when you have a simple grammar and simplicity is more important than efficiency
+  - Used for scripting and programming language
+  - 

@@ -96,3 +96,5 @@ Note of reading book - head first design pattern
 [Chain of Responsibility](./ch14/ChainOfResponsibility.md)
 
 [The Flyweight Pattern](./ch14/Flyweight.md)
+
+[The Interpreter Pattern](./ch14/Interpreter.md)
