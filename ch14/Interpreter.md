@@ -8,4 +8,4 @@
   - Use interpreter when you need to implement a simple language
   - Appropriate when you have a simple grammar and simplicity is more important than efficiency
   - Used for scripting and programming language
-  - 
+  - This pattern can become cumbersome when the number of grammar rule is large. In these cases a parser/compiler generator may be more appropriate

@@ -98,3 +98,5 @@ Note of reading book - head first design pattern
 [The Flyweight Pattern](./ch14/Flyweight.md)
 
 [The Interpreter Pattern](./ch14/Interpreter.md)
+
+[The Mediator Pattern](./ch14/Mediator.md)

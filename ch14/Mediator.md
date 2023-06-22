@@ -1,0 +1,9 @@
+- **The Mediator Pattern**
+  - Centralize complex communications and control between related objects
+- **Benefits**
+  - Increase the reusability of the objects supported by the Mediator by decoupling them from the system
+  - Simplifies maintenance of the system by centralizing control logic
+  - Simplifies and reduces the variety of messages send between objects in the system
+- **Usage & Drawbacks**
+  - The Mediator is commonly used to coordinate related GUI components
+  - A drawback of the Mediator pattern is that without proper design, the Mediator object itself can become overly complex
