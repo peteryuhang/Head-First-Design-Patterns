@@ -100,3 +100,5 @@ Note of reading book - head first design pattern
 [The Interpreter Pattern](./ch14/Interpreter.md)
 
 [The Mediator Pattern](./ch14/Mediator.md)
+
+[The Memento Pattern](./ch14/Memento.md)

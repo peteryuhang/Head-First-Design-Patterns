@@ -1,0 +1,10 @@
+- **The Memento Pattern**
+  - Use this pattern when you need to be able to return an object to one of its previous state; for instance, if your user requests an "undo"
+- **Benefits**
+  - Keeping the saved state external from the key object helps to maintain [cohesion](../ch9/ch9.md)
+  - Keeps the key object's data encapsulated
+  - Provide easy-to-implement recovery capability
+- **Usage & Drawbacks**
+  - The Memento is used to save state
+  - A drawback to using Memeto is that saving and restoring state can be time consuming
+  - In Java systems, consider using Serialization to save a system's state
