@@ -2,10 +2,10 @@ package ch7;
 
 import java.util.*;
 
-class IteratorEnumeration implements Enumeration {
+class IteratorEnumerationAdapter implements Enumeration {
   private Iterator iter;
 
-  public IteratorEnumeration(Iterator iter) {
+  public IteratorEnumerationAdapter(Iterator iter) {
     this.iter = iter;
   }
 
@@ -23,7 +23,7 @@ class TestDrive {
     ArrayList list = new ArrayList<>();
     list.add(1);
     list.add(2);
-    IteratorEnumeration enumList = new IteratorEnumeration(list.iterator());
+    IteratorEnumerationAdapter enumList = new IteratorEnumerationAdapter(list.iterator());
 
     System.out.println("The list's iterator with IteratorEnumeration adapter");
     System.out.println("enumList.hasElements returned: " + enumList.hasMoreElements());  // true

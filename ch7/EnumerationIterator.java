@@ -3,10 +3,10 @@ package ch7;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-public class EnumerationIterator implements Iterator {
+public class EnumerationIteratorAdapter implements Iterator {
   private Enumeration enumeration;
 
-  public EnumerationIterator(Enumeration enumeration) {
+  public EnumerationIteratorAdapter(Enumeration enumeration) {
     this.enumeration = enumeration;
   }
 
