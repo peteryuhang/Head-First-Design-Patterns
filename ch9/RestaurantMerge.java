@@ -94,6 +94,8 @@ class PancakeHouseMenu {
     menuItems.add(menuItem);
   }
 
+  // It is not good idea for returning collection from class
+  // https://github.com/peteryuhang/Refactoring-Improving-the-Design-of-Existing-Code/blob/master/ch8/EncapsulateCollection.java
   // public ArrayList getMenuItems() {
   //   return menuItems;
   // }
